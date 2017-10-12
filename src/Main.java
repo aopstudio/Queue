@@ -1,8 +1,9 @@
 
 public class Main {
 	public static void main(String[] args){
-		Simulator si=new Simulator();
+		Fifo si=new Fifo();
 		si.fileLoader("arbitrary.run");
-		si.display();
+		//si.display();
+		si.simulate();
 	}
 }

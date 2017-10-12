@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 
 
 public class Simulator {
-	int seconds_per_page;
+	int seconds_per_page=2;
 	Queue<Event> workload=new Queue<Event>();
 	
 	public void fileLoader(String filename){
