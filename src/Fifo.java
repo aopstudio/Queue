@@ -17,8 +17,6 @@ public class Fifo extends Simulator{
 			+work.getArrival_time()+" seconds");
 			System.out.println("Servicing: "+work.getJ().number_of_pages+" pages from "+work.getJ().getUser()+" at "
 			+work.getArrival_time()+" seconds");
-			System.out.println(timer.getNext());
-			System.out.println(timer.getTime());
 		}
 		while(workload.isEmpty()==false){
 			
@@ -69,6 +67,10 @@ public class Fifo extends Simulator{
 				}
 			
 		}
+		System.out.println();
+		System.out.println("Total jobs: "+total);
+		System.out.println("Aggregate latency: "+latency+" seconds");
+		System.out.println("Mean latency: "+(float)latency/total+" seconds");
 	}	
 	private void writeFile(String filename, String content)
 			throws IOException {
